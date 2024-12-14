@@ -1,0 +1,139 @@
+Steps to install OSSEC in host:
+Pre-Requesites
+
+OSSEC requires gcc, libc, apache and PHP.
+	1.sudo apt-get update -y 
+	2.sudo apt-get upgrade -y
+	3.apt-get install build-essential gcc make apache2 libapache2-mod-php7.0 php7.0 php7.0-cli php7.0-common apache2-utils unzip wget     		  sendmail inotify-tools -y
+To INSTALL 
+	1.wget https://github.com/ossec/ossec-hids/archive/2.9.0.tar.gz
+	2.tar -xvzf 2.9.0.tar.gz
+	3.cd ossec-hids-2.9.0
+	4.sh install.sh
+	5.(en/br/cn/de/el/es/fr/hu/it/jp/nl/pl/ru/sr/tr) [en]:en - To Select Language 
+	6.OSSEC HIDS v2.9.0 Installation Script - http://www.ossec.net
+
+	You are about to start the installation process of the OSSEC HIDS. 
+	You must have a C compiler pre-installed in your system.
+
+	- System: Linux Node1 4.4.0-45-generic 
+	- User: root 
+	- Host: localhost
+	 
+	-- Press ENTER to continue or Ctrl-C to abort. --
+	
+	7. What kind of installation do you want (server, agent, local, hybrid or help)? local
+	
+	8 - Setting up the installation environment.
+	  - Choose where to install the OSSEC HIDS [/var/ossec]:
+	  
+	  - Installation will be made at /var/ossec .
+  
+	9 - Configuring the OSSEC HIDS.
+  
+	  - Do you want e-mail notification? (y/n) [y]: y
+	  
+       10 - - What's your e-mail address? root@localhost
+  
+	     - We found your SMTP server as: 127.0.0.1 
+	    - Do you want to use it? (y/n) [y]: y
+	    
+       11 Do you want to run the integrity check daemon? (y/n) [y]:
+           - Running syscheck (integrity check daemon).
+           
+       12 - Do you want to run the rootkit detection engine? (y/n) [y]: 
+         - Running rootcheck (rootkit detection).
+         
+       13 - - Do you want to enable active response? (y/n) [y]:
+    	   - Active response enabled.
+    	   
+    	14 - Default white list for the active response: 
+            - 192.168.15.1
+  
+           - Do you want to add more IPs to the white list? (y/n)? [n]: n
+           
+        15 - Do you want to enable remote syslog (port 514 udp)? (y/n) [y]:
+           - Remote syslog enabled.
+           
+           - If you want to monitor any other file, just change the 
+	     ossec.conf and add a new localfile entry. 
+	     Any questions about the configuration can be answered 
+	     by visiting us online at http://www.ossec.net .
+	  
+	    --- Press ENTER to continue ---
+	    
+	 16     - System is Debian (Ubuntu or derivative). 
+		- Init script modified to start OSSEC HIDS during boot.
+
+		- Configuration finished properly. 
+		- To start OSSEC HIDS: 
+		 /var/ossec/bin/ossec-control start
+
+		- To stop OSSEC HIDS: 
+		 /var/ossec/bin/ossec-control stop
+
+		- The configuration can be viewed or modified at /var/ossec/etc/ossec.conf
+
+		Thanks for using the OSSEC HIDS. 
+		If you have any question, suggestion or if you find any bug, 
+		contact us at contact@ossec.net or using our public maillist at 
+		ossec-list@ossec.net 
+		( http://www.ossec.net/main/support/ ).
+
+		More information can be found at http://www.ossec.net
+
+		--- Press ENTER to finish (maybe more information below). --- 
+		- In order to connect agent and server, you need to add each agent to the server. 
+		Run the 'manage_agents' to add or remove them:
+		
+	  17 	/var/ossec/bin/ossec-control start
+	
+	  18	Starting OSSEC HIDS v2.9 (by Trend Micro Inc.)... 
+		Started ossec-maild... 
+		Started ossec-execd... 
+		Started ossec-analysisd... 
+		Started ossec-logcollector... 
+		Started ossec-syscheckd... 
+		Started ossec-monitord... 
+		Completed.
+		
+steps to Install XRPL
+ 1.Pre-Requesites - Python3.8, pip3 
+ 2.pip install xrpl-py
+ 
+ 
+github link to download ossec  - https://github.com/ossec/ossec-hids
+
+github link to downlaod xrpl -  https://github.com/XRPLF/rippled
+
+
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+
+Steps to install xrpl-py
